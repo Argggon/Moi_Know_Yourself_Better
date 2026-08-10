@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000012B00000000000001 /* MoiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000012B00000000000001 /* MoiApp.swift */; };
+		A10000022B00000000000001 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000022B00000000000001 /* AppState.swift */; };
+		A10000032B00000000000001 /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000032B00000000000001 /* DailyLog.swift */; };
+		A10000042B00000000000001 /* SpontaneousNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000042B00000000000001 /* SpontaneousNote.swift */; };
+		A10000052B00000000000001 /* AskRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000052B00000000000001 /* AskRecord.swift */; };
+		A10000062B00000000000001 /* QuestionFingerprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000062B00000000000001 /* QuestionFingerprint.swift */; };
+		A10000072B00000000000001 /* LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000072B00000000000001 /* LLMService.swift */; };
+		A10000082B00000000000001 /* ProfileStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000082B00000000000001 /* ProfileStorageManager.swift */; };
+		A10000092B00000000000001 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000092B00000000000001 /* SpeechRecognizer.swift */; };
+		A10000102B00000000000001 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000102B00000000000001 /* LocalNotificationManager.swift */; };
+		A10000112B00000000000001 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000112B00000000000001 /* DesignSystem.swift */; };
+		A10000122B00000000000001 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000122B00000000000001 /* DateExtensions.swift */; };
+		A10000132B00000000000001 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000132B00000000000001 /* MainTabView.swift */; };
+		A10000142B00000000000001 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000142B00000000000001 /* OnboardingView.swift */; };
+		A10000152B00000000000001 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000152B00000000000001 /* TodayView.swift */; };
+		A10000162B00000000000001 /* SpontaneousNoteEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000162B00000000000001 /* SpontaneousNoteEntryView.swift */; };
+		A10000172B00000000000001 /* RefineComparisonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000172B00000000000001 /* RefineComparisonCard.swift */; };
+		A10000182B00000000000001 /* CalendarSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000182B00000000000001 /* CalendarSheetView.swift */; };
+		A10000192B00000000000001 /* AskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000192B00000000000001 /* AskView.swift */; };
+		A10000202B00000000000001 /* AskResultSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000202B00000000000001 /* AskResultSheet.swift */; };
+		A10000212B00000000000001 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000212B00000000000001 /* StoryView.swift */; };
+		A10000222B00000000000001 /* StoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000222B00000000000001 /* StoryDetailView.swift */; };
+		A10000232B00000000000001 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000232B00000000000001 /* SettingsSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		T10000012B00000000000001 /* Moi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10000012B00000000000001 /* MoiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/MoiApp.swift; sourceTree = "<group>"; };
+		F10000022B00000000000001 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppState.swift; sourceTree = "<group>"; };
+		F10000032B00000000000001 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/DailyLog.swift; sourceTree = "<group>"; };
+		F10000042B00000000000001 /* SpontaneousNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/SpontaneousNote.swift; sourceTree = "<group>"; };
+		F10000052B00000000000001 /* AskRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/AskRecord.swift; sourceTree = "<group>"; };
+		F10000062B00000000000001 /* QuestionFingerprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/QuestionFingerprint.swift; sourceTree = "<group>"; };
+		F10000072B00000000000001 /* LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LLMService.swift; sourceTree = "<group>"; };
+		F10000082B00000000000001 /* ProfileStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ProfileStorageManager.swift; sourceTree = "<group>"; };
+		F10000092B00000000000001 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/SpeechRecognizer.swift; sourceTree = "<group>"; };
+		F10000102B00000000000001 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LocalNotificationManager.swift; sourceTree = "<group>"; };
+		F10000112B00000000000001 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/DesignSystem.swift; sourceTree = "<group>"; };
+		F10000122B00000000000001 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/DateExtensions.swift; sourceTree = "<group>"; };
+		F10000132B00000000000001 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MainTabView.swift; sourceTree = "<group>"; };
+		F10000142B00000000000001 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
+		F10000152B00000000000001 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/TodayView.swift; sourceTree = "<group>"; };
+		F10000162B00000000000001 /* SpontaneousNoteEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/SpontaneousNoteEntryView.swift; sourceTree = "<group>"; };
+		F10000172B00000000000001 /* RefineComparisonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/RefineComparisonCard.swift; sourceTree = "<group>"; };
+		F10000182B00000000000001 /* CalendarSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/CalendarSheetView.swift; sourceTree = "<group>"; };
+		F10000192B00000000000001 /* AskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Ask/AskView.swift; sourceTree = "<group>"; };
+		F10000202B00000000000001 /* AskResultSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Ask/AskResultSheet.swift; sourceTree = "<group>"; };
+		F10000212B00000000000001 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Story/StoryView.swift; sourceTree = "<group>"; };
+		F10000222B00000000000001 /* StoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Story/StoryDetailView.swift; sourceTree = "<group>"; };
+		F10000232B00000000000001 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Settings/SettingsSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		S10000012B00000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G10000012B00000000000001 = {
+			isa = PBXGroup;
+			children = (
+				G10000022B00000000000001 /* Moi */,
+				G10000032B00000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G10000022B00000000000001 /* Moi */ = {
+			isa = PBXGroup;
+			children = (
+				F10000012B00000000000001 /* MoiApp.swift */,
+				F10000022B00000000000001 /* AppState.swift */,
+				F10000032B00000000000001 /* DailyLog.swift */,
+				F10000042B00000000000001 /* SpontaneousNote.swift */,
+				F10000052B00000000000001 /* AskRecord.swift */,
+				F10000062B00000000000001 /* QuestionFingerprint.swift */,
+				F10000072B00000000000001 /* LLMService.swift */,
+				F10000082B00000000000001 /* ProfileStorageManager.swift */,
+				F10000092B00000000000001 /* SpeechRecognizer.swift */,
+				F10000102B00000000000001 /* LocalNotificationManager.swift */,
+				F10000112B00000000000001 /* DesignSystem.swift */,
+				F10000122B00000000000001 /* DateExtensions.swift */,
+				F10000132B00000000000001 /* MainTabView.swift */,
+				F10000142B00000000000001 /* OnboardingView.swift */,
+				F10000152B00000000000001 /* TodayView.swift */,
+				F10000162B00000000000001 /* SpontaneousNoteEntryView.swift */,
+				F10000172B00000000000001 /* RefineComparisonCard.swift */,
+				F10000182B00000000000001 /* CalendarSheetView.swift */,
+				F10000192B00000000000001 /* AskView.swift */,
+				F10000202B00000000000001 /* AskResultSheet.swift */,
+				F10000212B00000000000001 /* StoryView.swift */,
+				F10000222B00000000000001 /* StoryDetailView.swift */,
+				F10000232B00000000000001 /* SettingsSheet.swift */,
+			);
+			path = .;
+			sourceTree = "<group>";
+		};
+		G10000032B00000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				T10000012B00000000000001 /* Moi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		N10000012B00000000000001 /* Moi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10000012B00000000000001 /* Build configuration list for PBXNativeTarget "Moi" */;
+			buildPhases = (
+				S10000022B00000000000001 /* Sources */,
+				S10000012B00000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moi;
+			productName = Moi;
+			productReference = T10000012B00000000000001 /* Moi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P10000012B00000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					N10000012B00000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = C10000022B00000000000001 /* Build configuration list for PBXProject "Moi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G10000012B00000000000001;
+			productRefGroup = G10000032B00000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				N10000012B00000000000001 /* Moi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S10000022B00000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000012B00000000000001 /* MoiApp.swift in Sources */,
+				A10000022B00000000000001 /* AppState.swift in Sources */,
+				A10000032B00000000000001 /* DailyLog.swift in Sources */,
+				A10000042B00000000000001 /* SpontaneousNote.swift in Sources */,
+				A10000052B00000000000001 /* AskRecord.swift in Sources */,
+				A10000062B00000000000001 /* QuestionFingerprint.swift in Sources */,
+				A10000072B00000000000001 /* LLMService.swift in Sources */,
+				A10000082B00000000000001 /* ProfileStorageManager.swift in Sources */,
+				A10000092B00000000000001 /* SpeechRecognizer.swift in Sources */,
+				A10000102B00000000000001 /* LocalNotificationManager.swift in Sources */,
+				A10000112B00000000000001 /* DesignSystem.swift in Sources */,
+				A10000122B00000000000001 /* DateExtensions.swift in Sources */,
+				A10000132B00000000000001 /* MainTabView.swift in Sources */,
+				A10000142B00000000000001 /* OnboardingView.swift in Sources */,
+				A10000152B00000000000001 /* TodayView.swift in Sources */,
+				A10000162B00000000000001 /* SpontaneousNoteEntryView.swift in Sources */,
+				A10000172B00000000000001 /* RefineComparisonCard.swift in Sources */,
+				A10000182B00000000000001 /* CalendarSheetView.swift in Sources */,
+				A10000192B00000000000001 /* AskView.swift in Sources */,
+				A10000202B00000000000001 /* AskResultSheet.swift in Sources */,
+				A10000212B00000000000001 /* StoryView.swift in Sources */,
+				A10000222B00000000000001 /* StoryDetailView.swift in Sources */,
+				A10000232B00000000000001 /* SettingsSheet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BC1000012B00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moi.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC1000022B00000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moi.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC1000032B00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BC1000042B00000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C10000012B00000000000001 /* Build configuration list for PBXNativeTarget "Moi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1000012B00000000000001 /* Debug */,
+				BC1000022B00000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10000022B00000000000001 /* Build configuration list for PBXProject "Moi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1000032B00000000000001 /* Debug */,
+				BC1000042B00000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P10000012B00000000000001 /* Project object */;
+}

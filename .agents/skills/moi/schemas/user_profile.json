@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MoiUserProfile",
+  "description": "Internal structured user profile for Moi, updated incrementally every month.",
+  "type": "object",
+  "properties": {
+    "nickname": {
+      "type": "string",
+      "default": "you"
+    },
+    "version": {
+      "type": "integer",
+      "description": "Increments with each monthly profile consolidation cycle.",
+      "default": 1
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "core_traits": {
+      "type": "array",
+      "description": "Key personality tendencies (e.g. 'High introversion', 'Deep introspective thinker', 'Sensitive to environmental shifts')",
+      "items": { "type": "string" }
+    },
+    "core_values": {
+      "type": "array",
+      "description": "Demonstrated non-negotiable personal values inferred from answers.",
+      "items": { "type": "string" }
+    },
+    "emotional_patterns": {
+      "type": "object",
+      "properties": {
+        "primary_triggers": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Things that evoke stress, joy, or deep reflection."
+        },
+        "coping_mechanisms": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "behavioral_observations": {
+      "type": "array",
+      "description": "Observed real-world habits or choice patterns.",
+      "items": { "type": "string" }
+    },
+    "growth_milestones": {
+      "type": "array",
+      "description": "Recent shifts in perspective or self-awareness achieved.",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["nickname", "version", "core_traits", "core_values", "emotional_patterns"]
+}

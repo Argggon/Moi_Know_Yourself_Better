@@ -1,0 +1,122 @@
+{
+  "user_info": {
+    "nickname": "Alex",
+    "city": "Shanghai",
+    "registered_date": "2026-07-01"
+  },
+  "initial_profile": {
+    "nickname": "Alex",
+    "version": 1,
+    "last_updated": "2026-07-01",
+    "core_traits": [
+      "High introversion",
+      "Sensitive to environmental ambience",
+      "Deeply reflective"
+    ],
+    "core_values": [
+      "Autonomy over authority",
+      "Depth over speed",
+      "Inner peace"
+    ],
+    "emotional_patterns": {
+      "primary_triggers": [
+        "Crowded noisy events",
+        "Micro-management"
+      ],
+      "coping_mechanisms": [
+        "Solo walks with rain sounds",
+        "Writing down unedited thoughts"
+      ]
+    },
+    "behavioral_observations": [
+      "Prefers typing or voice-notes over face-to-face debate"
+    ],
+    "growth_milestones": []
+  },
+  "month_raw_logs": [
+    {
+      "date": "2026-07-02",
+      "type": "daily_qa",
+      "question": "如果你能删掉日程表上的一件事，会是什么？",
+      "answer": "周五晚上的部门跨部门聚餐，感觉太消耗能量了。"
+    },
+    {
+      "date": "2026-07-05",
+      "type": "spontaneous_note",
+      "content": "今天下午下了暴雨，在雨声里工作效率奇高，突然觉得安静是最大的奢侈品。"
+    },
+    {
+      "date": "2026-07-10",
+      "type": "daily_qa",
+      "question": "当别人赞美你时，你的第一反应是什么？",
+      "answer": "会有点不好意思，怀疑对方是不是在客套，但内心其实蛮渴望被认可的。"
+    },
+    {
+      "date": "2026-07-15",
+      "type": "daily_qa",
+      "question": "最近一次让你感到完全放松的瞬间是什么？",
+      "answer": "上周六早上没有闹钟醒来，听着黑胶唱片做手冲咖啡的时候。"
+    },
+    {
+      "date": "2026-07-18",
+      "type": "spontaneous_note",
+      "content": "领导今天提议让我带团队，我第一反应居然是抗拒而不是高兴。比起管人，我更想专注在创造性的工作本身。"
+    },
+    {
+      "date": "2026-07-22",
+      "type": "daily_qa",
+      "question": "如果今天可以对三年前的自己说一句话，你会说什么？",
+      "answer": "别急着顺从别人的期待，你选的冷门路其实没有错。"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "daily_qa",
+      "question": "当你的计划被突发事件打乱时，你通常如何应对？",
+      "answer": "心里会先焦躁十分钟，然后强迫自己一个人静一静重新理清头绪。"
+    }
+  ],
+  "asked_questions_history": {
+    "history": [
+      {
+        "id": "q_20260702",
+        "date": "2026-07-02",
+        "question_zh": "如果你能删掉日程表上的一件事，会是什么？",
+        "depth_level": "medium",
+        "tags": ["work", "social_energy", "boundaries"],
+        "semantic_fingerprint": "deleting exhausting calendar task"
+      },
+      {
+        "id": "q_20260710",
+        "date": "2026-07-10",
+        "question_zh": "当别人赞美你时，你的第一反应是什么？",
+        "depth_level": "medium",
+        "tags": ["self_worth", "social_reaction"],
+        "semantic_fingerprint": "reaction to praise and internal validation"
+      },
+      {
+        "id": "q_20260715",
+        "date": "2026-07-15",
+        "question_zh": "最近一次让你感到完全放松的瞬间是什么？",
+        "depth_level": "light",
+        "tags": ["relaxation", "sensory", "daily_pleasure"],
+        "semantic_fingerprint": "moment of complete relaxation"
+      },
+      {
+        "id": "q_20260722",
+        "date": "2026-07-22",
+        "question_zh": "如果今天可以对三年前的自己说一句话，你会说什么？",
+        "depth_level": "deep",
+        "tags": ["reflection", "past_self", "identity"],
+        "semantic_fingerprint": "message to past self about career path"
+      },
+      {
+        "id": "q_20260728",
+        "date": "2026-07-28",
+        "question_zh": "当你的计划被突发事件打乱时，你通常如何应对？",
+        "depth_level": "medium",
+        "tags": ["coping", "unplanned_events", "emotional_regulation"],
+        "semantic_fingerprint": "handling sudden disruption to plans"
+      }
+    ]
+  }
+}
