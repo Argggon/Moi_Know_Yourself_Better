@@ -47,7 +47,6 @@ public struct AskResultSheet: View {
                     .padding()
                     .background(MoiDesign.Colors.secondaryBackground)
                     .cornerRadius(MoiDesign.Metrics.cornerRadiusSheet)
-                    .applyLiquidGlass()
                     
                     // Mandatory Reflection Footer
                     VStack(spacing: 8) {
