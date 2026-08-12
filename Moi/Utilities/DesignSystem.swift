@@ -68,7 +68,10 @@ public enum MoiDesign {
             if #available(iOS 27.0, *) {
                 content
                     .scrollEdgeEffectStyle(.automatic, for: .top)
-                    .toolbarMinimizeBehavior(.onScrollDown, for: .navigationBar)
+                    // FIXME: toolbarMinimizeBehavior was removed in Xcode 27 beta 5 (27A5237l)
+                    // Re-enable when Apple restores this API in future beta
+                    // See: https://developer.apple.com/forums/thread/796455
+                    // .toolbarMinimizeBehavior(.onScrollDown, for: .navigationBar)
             } else if #available(iOS 26.0, *) {
                 content
                     .scrollEdgeEffectStyle(.automatic, for: .top)
