@@ -104,7 +104,7 @@ public struct AskView: View {
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .lineSpacing(5)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
                             .padding(.horizontal, 36)
                         
                         Button(action: { showInfoPopover = true }) {
@@ -152,7 +152,7 @@ public struct AskView: View {
                                     }
                                     .padding()
                                     .background(MoiDesign.Colors.secondaryBackground)
-                                    .cornerRadius(16)
+                                    .cornerRadius(MoiDesign.Metrics.cornerRadiusStandard)
                                 }
                             }
                         }
@@ -232,7 +232,7 @@ public struct AskInfoSheet: View {
                     
                     Text("When facing life choices, dilemmas, or hesitation, Ask Moi synthesizes your past reflections and user persona to offer clear decision guidance.")
                         .font(.body)
-                        .lineSpacing(6)
+                        .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
                     
                     Divider()
                     
@@ -243,17 +243,17 @@ public struct AskInfoSheet: View {
                         Text("1. Evidence-Based Stance:\nAsk Moi cross-references your current dilemma with your accumulated Q&A history and Markdown persona to recommend a clear, non-judgmental direction.")
                             .font(.subheadline)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .lineSpacing(4)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingCompact)
                         
                         Text("2. Direct Quotes from Past Self:\nEvery stance is backed by direct quotes from your past answers, reminding you of your core values.")
                             .font(.subheadline)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .lineSpacing(4)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingCompact)
                         
                         Text("3. Non-Coercive Reflection:\nIf a recommended stance doesn't feel right to you, it serves as a mirror — revealing that you already know your true answer.")
                             .font(.subheadline)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .lineSpacing(4)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingCompact)
                     }
                     
                     Divider()
@@ -265,7 +265,7 @@ public struct AskInfoSheet: View {
                         Text("• Private Local History: Your decision queries and synthesized guidance remain strictly on your device.\n• Zero Third-Party Sharing: Your personal dilemmas are never logged or stored on external servers.")
                             .font(.subheadline)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .lineSpacing(4)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingCompact)
                     }
                 }
                 .padding()

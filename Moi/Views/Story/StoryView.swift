@@ -44,7 +44,7 @@ public struct StoryView: View {
                     .padding()
                     .frame(maxWidth: .infinity)
                     .background(MoiDesign.Colors.secondaryBackground)
-                    .cornerRadius(16)
+                    .cornerRadius(MoiDesign.Metrics.cornerRadiusStandard)
                     .padding(.horizontal)
                 }
                 
@@ -66,7 +66,7 @@ public struct StoryView: View {
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .lineSpacing(5)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
                             .padding(.horizontal, 36)
                         
                         Button(action: { showInfoPopover = true }) {
@@ -236,7 +236,7 @@ public struct StoryInfoSheet: View {
                     
                     Text("Every month, Moi distills your 30 daily reflections and instant feelings into a poetic, introspective story letter written to your future self.")
                         .font(.body)
-                        .lineSpacing(6)
+                        .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
                     
                     Divider()
                     
@@ -247,12 +247,12 @@ public struct StoryInfoSheet: View {
                         Text("1. Persona Consolidation:\nAt the end of each monthly cycle, a 2-step AI prompt chain analyzes your past logs and updates your fluid Markdown user profile (user_profile.md).")
                             .font(.subheadline)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .lineSpacing(4)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingCompact)
                         
                         Text("2. Poetic Generation:\nUsing your updated persona and direct quotes from your answers, Moi crafts a personal story letter reflecting your emotional weather and core values.")
                             .font(.subheadline)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .lineSpacing(4)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingCompact)
                     }
                     
                     Divider()
@@ -264,7 +264,7 @@ public struct StoryInfoSheet: View {
                         Text("• 100% Local Storage: All your logs, notes, and profile Markdown are stored securely on your device.\n• No Model Training: Your personal data is strictly used for real-time reflection synthesis and is never used to train global AI models.")
                             .font(.subheadline)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .lineSpacing(4)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingCompact)
                     }
                 }
                 .padding()

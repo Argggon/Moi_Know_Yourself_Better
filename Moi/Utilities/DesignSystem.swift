@@ -77,7 +77,7 @@ public enum MoiDesign {
         public func body(content: Content) -> some View {
             content
                 .background(Colors.cardBackground)
-                .cornerRadius(20)
+                .cornerRadius(Metrics.cornerRadiusSheet)
                 .modifier(CardShadow())
         }
     }

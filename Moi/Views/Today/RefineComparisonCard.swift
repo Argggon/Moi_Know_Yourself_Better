@@ -52,7 +52,7 @@ public struct RefineComparisonCard: View {
                 }
                 .padding()
                 .background(MoiDesign.Colors.cardBackground)
-                .cornerRadius(16)
+                .cornerRadius(MoiDesign.Metrics.cornerRadiusStandard)
                 .tag(0)
                 
                 // Page 1: Refined Text Card
@@ -65,7 +65,7 @@ public struct RefineComparisonCard: View {
                 }
                 .padding()
                 .background(MoiDesign.Colors.cardBackground)
-                .cornerRadius(16)
+                .cornerRadius(MoiDesign.Metrics.cornerRadiusStandard)
                 .tag(1)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
@@ -86,7 +86,7 @@ public struct RefineComparisonCard: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 44)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 22)
+                            RoundedRectangle(cornerRadius: MoiDesign.Metrics.cornerRadiusButton)
                                 .stroke(Color.gray.opacity(0.3), lineWidth: 1)
                         )
                 }
@@ -101,12 +101,12 @@ public struct RefineComparisonCard: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 44)
                         .background(MoiDesign.Colors.primary)
-                        .cornerRadius(22)
+                        .cornerRadius(MoiDesign.Metrics.cornerRadiusButton)
                 }
             }
         }
         .padding()
         .background(MoiDesign.Colors.secondaryBackground)
-        .cornerRadius(20)
+        .cornerRadius(MoiDesign.Metrics.cornerRadiusSheet)
     }
 }

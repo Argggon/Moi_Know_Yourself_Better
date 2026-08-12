@@ -63,7 +63,7 @@ public struct TodayView: View {
                     Text(todayLog.questionEn.isEmpty ? todayLog.questionZh : todayLog.questionEn)
                         .font(.title3)
                         .fontWeight(.medium)
-                        .lineSpacing(6)
+                        .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
                         .foregroundColor(MoiDesign.Colors.primaryText)
                     
                     // Display Answer OR Flat Input Bar
@@ -81,7 +81,7 @@ public struct TodayView: View {
                             
                             Text(todayLog.isRefinedUsed ? todayLog.refinedAnswer : todayLog.rawAnswer)
                                 .font(.body)
-                                .lineSpacing(6)
+                                .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
                                 .foregroundColor(MoiDesign.Colors.primaryText)
                         }
                         .padding(.top, 4)
@@ -174,11 +174,11 @@ public struct TodayView: View {
                                         .padding(.horizontal, 8)
                                         .padding(.vertical, 4)
                                         .background(MoiDesign.Colors.secondaryBackground)
-                                        .cornerRadius(8)
+                                        .cornerRadius(MoiDesign.Metrics.cornerRadiusSmall)
                                     
                                     Text(note.content)
                                         .font(.body)
-                                        .lineSpacing(4)
+                                        .lineSpacing(MoiDesign.Metrics.lineSpacingCompact)
                                         .foregroundColor(MoiDesign.Colors.primaryText)
                                     
                                     Spacer()

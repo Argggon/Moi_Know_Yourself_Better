@@ -153,7 +153,7 @@ public struct CalendarSheetView: View {
                                 }
                                 .padding()
                                 .background(MoiDesign.Colors.secondaryBackground)
-                                .cornerRadius(16)
+                                .cornerRadius(MoiDesign.Metrics.cornerRadiusStandard)
                             } else {
                                 Text("No reflection recorded for this date")
                                     .font(.subheadline)
@@ -187,7 +187,7 @@ public struct CalendarSheetView: View {
                                 }
                                 .padding()
                                 .background(MoiDesign.Colors.secondaryBackground)
-                                .cornerRadius(16)
+                                .cornerRadius(MoiDesign.Metrics.cornerRadiusStandard)
                             } else {
                                 Text("No sparkles recorded for this date")
                                     .font(.subheadline)

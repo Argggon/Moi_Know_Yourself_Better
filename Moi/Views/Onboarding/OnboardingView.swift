@@ -33,7 +33,7 @@ public struct OnboardingView: View {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(MoiDesign.Colors.secondaryText)
-                        .lineSpacing(6)
+                        .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
                 }
                 .transition(.opacity)
                 
@@ -49,7 +49,7 @@ public struct OnboardingView: View {
                         .multilineTextAlignment(.center)
                         .padding()
                         .background(MoiDesign.Colors.secondaryBackground)
-                        .cornerRadius(12)
+                        .cornerRadius(MoiDesign.Metrics.cornerRadiusSmall)
                         .padding(.horizontal, 40)
                 }
                 .transition(.opacity)
@@ -100,7 +100,7 @@ public struct OnboardingView: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 52)
                         .background(MoiDesign.Colors.primary)
-                        .cornerRadius(26)
+                        .cornerRadius(26)  // 保持26，因为高度52的50%
                 }
                 .padding(.horizontal, 40)
                 

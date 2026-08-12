@@ -34,19 +34,19 @@ public struct AskResultSheet: View {
                         
                         Text(record.stanceHeadline)
                             .font(.headline)
-                            .lineSpacing(4)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingCompact)
                             .foregroundColor(MoiDesign.Colors.primaryText)
                         
                         Divider().padding(.vertical, 4)
                         
                         Text(record.explanation)
                             .font(.body)
-                            .lineSpacing(6)
+                            .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
                     }
                     .padding()
                     .background(MoiDesign.Colors.secondaryBackground)
-                    .cornerRadius(20)
+                    .cornerRadius(MoiDesign.Metrics.cornerRadiusSheet)
                     
                     // Mandatory Reflection Footer
                     VStack(spacing: 8) {
