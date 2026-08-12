@@ -117,6 +117,7 @@ public struct StoryView: View {
                                 .padding()
                                 .background(MoiDesign.Colors.secondaryBackground)
                                 .cornerRadius(16)
+                                .applyLiquidGlass()
                             }
                         }
                         
@@ -155,6 +156,7 @@ public struct StoryView: View {
                 Button(action: { triggerManualStoryGeneration() }) {
                     Image(systemName: "sparkles")
                         .font(.system(size: 16, weight: .semibold))
+                        .symbolEffect(.pulse.byLayer, options: .repeating)
                 }
                 .accessibilityLabel("Generate story")
                 

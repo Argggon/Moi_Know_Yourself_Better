@@ -47,12 +47,14 @@ public struct AskResultSheet: View {
                     .padding()
                     .background(MoiDesign.Colors.secondaryBackground)
                     .cornerRadius(MoiDesign.Metrics.cornerRadiusSheet)
+                    .applyLiquidGlass()
                     
                     // Mandatory Reflection Footer
                     VStack(spacing: 8) {
                         Image(systemName: "sparkles")
                             .font(.title3)
                             .foregroundColor(MoiDesign.Colors.tertiaryText)
+                            .symbolEffect(.pulse.byLayer, options: .repeating)
                         
                         Text("If this stance doesn't feel right to you, you may already know your true answer.")
                             .font(.caption)

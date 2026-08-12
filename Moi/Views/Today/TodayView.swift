@@ -77,6 +77,7 @@ public struct TodayView: View {
                                 Image(systemName: "checkmark.circle.fill")
                                     .font(.caption)
                                     .foregroundColor(.blue)
+                                    .symbolEffect(.bounce, value: todayLog.isCompleted)
                             }
                             
                             Text(todayLog.isRefinedUsed ? todayLog.refinedAnswer : todayLog.rawAnswer)

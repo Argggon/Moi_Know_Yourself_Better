@@ -100,6 +100,24 @@ public enum MoiDesign {
             }
         }
     }
+
+    // MARK: - Liquid Glass Effect (iOS 27+)
+    // TODO: Liquid Glass API not yet available in current iOS 27 beta
+    // Will be implemented when Apple releases the public API
+    public struct LiquidGlassModifier: ViewModifier {
+        @ViewBuilder
+        public func body(content: Content) -> some View {
+            // Placeholder for future Liquid Glass implementation
+            content
+        }
+    }
+}
+
+// MARK: - View Extensions
+extension View {
+    public func applyLiquidGlass() -> some View {
+        self.modifier(MoiDesign.LiquidGlassModifier())
+    }
 }
 
 public struct MoiSheetCloseButton: View {
