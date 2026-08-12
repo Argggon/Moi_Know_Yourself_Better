@@ -7,56 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10000012B00000000000001 /* MoiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000012B00000000000001 /* MoiApp.swift */; };
-		A10000022B00000000000001 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000022B00000000000001 /* AppState.swift */; };
-		A10000032B00000000000001 /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000032B00000000000001 /* DailyLog.swift */; };
-		A10000042B00000000000001 /* SpontaneousNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000042B00000000000001 /* SpontaneousNote.swift */; };
-		A10000052B00000000000001 /* AskRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000052B00000000000001 /* AskRecord.swift */; };
-		A10000062B00000000000001 /* QuestionFingerprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000062B00000000000001 /* QuestionFingerprint.swift */; };
-		A10000072B00000000000001 /* LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000072B00000000000001 /* LLMService.swift */; };
-		A10000082B00000000000001 /* ProfileStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000082B00000000000001 /* ProfileStorageManager.swift */; };
-		A10000092B00000000000001 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000092B00000000000001 /* SpeechRecognizer.swift */; };
-		A10000102B00000000000001 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000102B00000000000001 /* LocalNotificationManager.swift */; };
-		A10000112B00000000000001 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000112B00000000000001 /* DesignSystem.swift */; };
-		A10000122B00000000000001 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000122B00000000000001 /* DateExtensions.swift */; };
-		A10000132B00000000000001 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000132B00000000000001 /* MainTabView.swift */; };
-		A10000142B00000000000001 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000142B00000000000001 /* OnboardingView.swift */; };
-		A10000152B00000000000001 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000152B00000000000001 /* TodayView.swift */; };
-		A10000162B00000000000001 /* SpontaneousNoteEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000162B00000000000001 /* SpontaneousNoteEntryView.swift */; };
-		A10000172B00000000000001 /* RefineComparisonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000172B00000000000001 /* RefineComparisonCard.swift */; };
-		A10000182B00000000000001 /* CalendarSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000182B00000000000001 /* CalendarSheetView.swift */; };
-		A10000192B00000000000001 /* AskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000192B00000000000001 /* AskView.swift */; };
-		A10000202B00000000000001 /* AskResultSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000202B00000000000001 /* AskResultSheet.swift */; };
-		A10000212B00000000000001 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000212B00000000000001 /* StoryView.swift */; };
-		A10000222B00000000000001 /* StoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000222B00000000000001 /* StoryDetailView.swift */; };
-		A10000232B00000000000001 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000232B00000000000001 /* SettingsSheet.swift */; };
+		A10000012B00000000000001 /* App/MoiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000012B00000000000001 /* App/MoiApp.swift */; };
+		A10000022B00000000000001 /* App/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000022B00000000000001 /* App/AppState.swift */; };
+		A10000032B00000000000001 /* Models/DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000032B00000000000001 /* Models/DailyLog.swift */; };
+		A10000042B00000000000001 /* Models/SpontaneousNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000042B00000000000001 /* Models/SpontaneousNote.swift */; };
+		A10000052B00000000000001 /* Models/AskRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000052B00000000000001 /* Models/AskRecord.swift */; };
+		A10000062B00000000000001 /* Models/QuestionFingerprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000062B00000000000001 /* Models/QuestionFingerprint.swift */; };
+		A10000072B00000000000001 /* Services/LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000072B00000000000001 /* Services/LLMService.swift */; };
+		A10000082B00000000000001 /* Services/ProfileStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000082B00000000000001 /* Services/ProfileStorageManager.swift */; };
+		A10000092B00000000000001 /* Services/SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000092B00000000000001 /* Services/SpeechRecognizer.swift */; };
+		A10000102B00000000000001 /* Services/LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000102B00000000000001 /* Services/LocalNotificationManager.swift */; };
+		A10000112B00000000000001 /* Utilities/DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000112B00000000000001 /* Utilities/DesignSystem.swift */; };
+		A10000122B00000000000001 /* Utilities/DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000122B00000000000001 /* Utilities/DateExtensions.swift */; };
+		A10000132B00000000000001 /* Views/MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000132B00000000000001 /* Views/MainTabView.swift */; };
+		A10000142B00000000000001 /* Views/Onboarding/OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000142B00000000000001 /* Views/Onboarding/OnboardingView.swift */; };
+		A10000152B00000000000001 /* Views/Today/TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000152B00000000000001 /* Views/Today/TodayView.swift */; };
+		A10000162B00000000000001 /* Views/Today/SpontaneousNoteEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000162B00000000000001 /* Views/Today/SpontaneousNoteEntryView.swift */; };
+		A10000172B00000000000001 /* Views/Today/RefineComparisonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000172B00000000000001 /* Views/Today/RefineComparisonCard.swift */; };
+		A10000182B00000000000001 /* Views/Today/CalendarSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000182B00000000000001 /* Views/Today/CalendarSheetView.swift */; };
+		A10000192B00000000000001 /* Views/Ask/AskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000192B00000000000001 /* Views/Ask/AskView.swift */; };
+		A10000202B00000000000001 /* Views/Ask/AskResultSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000202B00000000000001 /* Views/Ask/AskResultSheet.swift */; };
+		A10000212B00000000000001 /* Views/Story/StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000212B00000000000001 /* Views/Story/StoryView.swift */; };
+		A10000222B00000000000001 /* Views/Story/StoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000222B00000000000001 /* Views/Story/StoryDetailView.swift */; };
+		A10000232B00000000000001 /* Views/Settings/SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000232B00000000000001 /* Views/Settings/SettingsSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F10000012B00000000000001 /* App/MoiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/MoiApp.swift; sourceTree = "<group>"; };
+		F10000022B00000000000001 /* App/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppState.swift; sourceTree = "<group>"; };
+		F10000032B00000000000001 /* Models/DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/DailyLog.swift; sourceTree = "<group>"; };
+		F10000042B00000000000001 /* Models/SpontaneousNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/SpontaneousNote.swift; sourceTree = "<group>"; };
+		F10000052B00000000000001 /* Models/AskRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/AskRecord.swift; sourceTree = "<group>"; };
+		F10000062B00000000000001 /* Models/QuestionFingerprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/QuestionFingerprint.swift; sourceTree = "<group>"; };
+		F10000072B00000000000001 /* Services/LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LLMService.swift; sourceTree = "<group>"; };
+		F10000082B00000000000001 /* Services/ProfileStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ProfileStorageManager.swift; sourceTree = "<group>"; };
+		F10000092B00000000000001 /* Services/SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/SpeechRecognizer.swift; sourceTree = "<group>"; };
+		F10000102B00000000000001 /* Services/LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LocalNotificationManager.swift; sourceTree = "<group>"; };
+		F10000112B00000000000001 /* Utilities/DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/DesignSystem.swift; sourceTree = "<group>"; };
+		F10000122B00000000000001 /* Utilities/DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/DateExtensions.swift; sourceTree = "<group>"; };
+		F10000132B00000000000001 /* Views/MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MainTabView.swift; sourceTree = "<group>"; };
+		F10000142B00000000000001 /* Views/Onboarding/OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
+		F10000152B00000000000001 /* Views/Today/TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/TodayView.swift; sourceTree = "<group>"; };
+		F10000162B00000000000001 /* Views/Today/SpontaneousNoteEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/SpontaneousNoteEntryView.swift; sourceTree = "<group>"; };
+		F10000172B00000000000001 /* Views/Today/RefineComparisonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/RefineComparisonCard.swift; sourceTree = "<group>"; };
+		F10000182B00000000000001 /* Views/Today/CalendarSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/CalendarSheetView.swift; sourceTree = "<group>"; };
+		F10000192B00000000000001 /* Views/Ask/AskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Ask/AskView.swift; sourceTree = "<group>"; };
+		F10000202B00000000000001 /* Views/Ask/AskResultSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Ask/AskResultSheet.swift; sourceTree = "<group>"; };
+		F10000212B00000000000001 /* Views/Story/StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Story/StoryView.swift; sourceTree = "<group>"; };
+		F10000222B00000000000001 /* Views/Story/StoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Story/StoryDetailView.swift; sourceTree = "<group>"; };
+		F10000232B00000000000001 /* Views/Settings/SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Settings/SettingsSheet.swift; sourceTree = "<group>"; };
 		T10000012B00000000000001 /* Moi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F10000012B00000000000001 /* MoiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/MoiApp.swift; sourceTree = "<group>"; };
-		F10000022B00000000000001 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppState.swift; sourceTree = "<group>"; };
-		F10000032B00000000000001 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/DailyLog.swift; sourceTree = "<group>"; };
-		F10000042B00000000000001 /* SpontaneousNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/SpontaneousNote.swift; sourceTree = "<group>"; };
-		F10000052B00000000000001 /* AskRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/AskRecord.swift; sourceTree = "<group>"; };
-		F10000062B00000000000001 /* QuestionFingerprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/QuestionFingerprint.swift; sourceTree = "<group>"; };
-		F10000072B00000000000001 /* LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LLMService.swift; sourceTree = "<group>"; };
-		F10000082B00000000000001 /* ProfileStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ProfileStorageManager.swift; sourceTree = "<group>"; };
-		F10000092B00000000000001 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/SpeechRecognizer.swift; sourceTree = "<group>"; };
-		F10000102B00000000000001 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LocalNotificationManager.swift; sourceTree = "<group>"; };
-		F10000112B00000000000001 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/DesignSystem.swift; sourceTree = "<group>"; };
-		F10000122B00000000000001 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/DateExtensions.swift; sourceTree = "<group>"; };
-		F10000132B00000000000001 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MainTabView.swift; sourceTree = "<group>"; };
-		F10000142B00000000000001 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
-		F10000152B00000000000001 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/TodayView.swift; sourceTree = "<group>"; };
-		F10000162B00000000000001 /* SpontaneousNoteEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/SpontaneousNoteEntryView.swift; sourceTree = "<group>"; };
-		F10000172B00000000000001 /* RefineComparisonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/RefineComparisonCard.swift; sourceTree = "<group>"; };
-		F10000182B00000000000001 /* CalendarSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Today/CalendarSheetView.swift; sourceTree = "<group>"; };
-		F10000192B00000000000001 /* AskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Ask/AskView.swift; sourceTree = "<group>"; };
-		F10000202B00000000000001 /* AskResultSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Ask/AskResultSheet.swift; sourceTree = "<group>"; };
-		F10000212B00000000000001 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Story/StoryView.swift; sourceTree = "<group>"; };
-		F10000222B00000000000001 /* StoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Story/StoryDetailView.swift; sourceTree = "<group>"; };
-		F10000232B00000000000001 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Settings/SettingsSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,37 +73,37 @@
 		G10000012B00000000000001 = {
 			isa = PBXGroup;
 			children = (
-				G10000022B00000000000001 /* Moi */,
+				G10000022B00000000000001 /* . */,
 				G10000032B00000000000001 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		G10000022B00000000000001 /* Moi */ = {
+		G10000022B00000000000001 /* . */ = {
 			isa = PBXGroup;
 			children = (
-				F10000012B00000000000001 /* MoiApp.swift */,
-				F10000022B00000000000001 /* AppState.swift */,
-				F10000032B00000000000001 /* DailyLog.swift */,
-				F10000042B00000000000001 /* SpontaneousNote.swift */,
-				F10000052B00000000000001 /* AskRecord.swift */,
-				F10000062B00000000000001 /* QuestionFingerprint.swift */,
-				F10000072B00000000000001 /* LLMService.swift */,
-				F10000082B00000000000001 /* ProfileStorageManager.swift */,
-				F10000092B00000000000001 /* SpeechRecognizer.swift */,
-				F10000102B00000000000001 /* LocalNotificationManager.swift */,
-				F10000112B00000000000001 /* DesignSystem.swift */,
-				F10000122B00000000000001 /* DateExtensions.swift */,
-				F10000132B00000000000001 /* MainTabView.swift */,
-				F10000142B00000000000001 /* OnboardingView.swift */,
-				F10000152B00000000000001 /* TodayView.swift */,
-				F10000162B00000000000001 /* SpontaneousNoteEntryView.swift */,
-				F10000172B00000000000001 /* RefineComparisonCard.swift */,
-				F10000182B00000000000001 /* CalendarSheetView.swift */,
-				F10000192B00000000000001 /* AskView.swift */,
-				F10000202B00000000000001 /* AskResultSheet.swift */,
-				F10000212B00000000000001 /* StoryView.swift */,
-				F10000222B00000000000001 /* StoryDetailView.swift */,
-				F10000232B00000000000001 /* SettingsSheet.swift */,
+				F10000012B00000000000001 /* App/MoiApp.swift */,
+				F10000022B00000000000001 /* App/AppState.swift */,
+				F10000032B00000000000001 /* Models/DailyLog.swift */,
+				F10000042B00000000000001 /* Models/SpontaneousNote.swift */,
+				F10000052B00000000000001 /* Models/AskRecord.swift */,
+				F10000062B00000000000001 /* Models/QuestionFingerprint.swift */,
+				F10000072B00000000000001 /* Services/LLMService.swift */,
+				F10000082B00000000000001 /* Services/ProfileStorageManager.swift */,
+				F10000092B00000000000001 /* Services/SpeechRecognizer.swift */,
+				F10000102B00000000000001 /* Services/LocalNotificationManager.swift */,
+				F10000112B00000000000001 /* Utilities/DesignSystem.swift */,
+				F10000122B00000000000001 /* Utilities/DateExtensions.swift */,
+				F10000132B00000000000001 /* Views/MainTabView.swift */,
+				F10000142B00000000000001 /* Views/Onboarding/OnboardingView.swift */,
+				F10000152B00000000000001 /* Views/Today/TodayView.swift */,
+				F10000162B00000000000001 /* Views/Today/SpontaneousNoteEntryView.swift */,
+				F10000172B00000000000001 /* Views/Today/RefineComparisonCard.swift */,
+				F10000182B00000000000001 /* Views/Today/CalendarSheetView.swift */,
+				F10000192B00000000000001 /* Views/Ask/AskView.swift */,
+				F10000202B00000000000001 /* Views/Ask/AskResultSheet.swift */,
+				F10000212B00000000000001 /* Views/Story/StoryView.swift */,
+				F10000222B00000000000001 /* Views/Story/StoryDetailView.swift */,
+				F10000232B00000000000001 /* Views/Settings/SettingsSheet.swift */,
 			);
 			path = .;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2700;
 				TargetAttributes = {
 					N10000012B00000000000001 = {
 						CreatedOnToolsVersion = 15.0;
@@ -172,29 +172,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10000012B00000000000001 /* MoiApp.swift in Sources */,
-				A10000022B00000000000001 /* AppState.swift in Sources */,
-				A10000032B00000000000001 /* DailyLog.swift in Sources */,
-				A10000042B00000000000001 /* SpontaneousNote.swift in Sources */,
-				A10000052B00000000000001 /* AskRecord.swift in Sources */,
-				A10000062B00000000000001 /* QuestionFingerprint.swift in Sources */,
-				A10000072B00000000000001 /* LLMService.swift in Sources */,
-				A10000082B00000000000001 /* ProfileStorageManager.swift in Sources */,
-				A10000092B00000000000001 /* SpeechRecognizer.swift in Sources */,
-				A10000102B00000000000001 /* LocalNotificationManager.swift in Sources */,
-				A10000112B00000000000001 /* DesignSystem.swift in Sources */,
-				A10000122B00000000000001 /* DateExtensions.swift in Sources */,
-				A10000132B00000000000001 /* MainTabView.swift in Sources */,
-				A10000142B00000000000001 /* OnboardingView.swift in Sources */,
-				A10000152B00000000000001 /* TodayView.swift in Sources */,
-				A10000162B00000000000001 /* SpontaneousNoteEntryView.swift in Sources */,
-				A10000172B00000000000001 /* RefineComparisonCard.swift in Sources */,
-				A10000182B00000000000001 /* CalendarSheetView.swift in Sources */,
-				A10000192B00000000000001 /* AskView.swift in Sources */,
-				A10000202B00000000000001 /* AskResultSheet.swift in Sources */,
-				A10000212B00000000000001 /* StoryView.swift in Sources */,
-				A10000222B00000000000001 /* StoryDetailView.swift in Sources */,
-				A10000232B00000000000001 /* SettingsSheet.swift in Sources */,
+				A10000012B00000000000001 /* App/MoiApp.swift in Sources */,
+				A10000022B00000000000001 /* App/AppState.swift in Sources */,
+				A10000032B00000000000001 /* Models/DailyLog.swift in Sources */,
+				A10000042B00000000000001 /* Models/SpontaneousNote.swift in Sources */,
+				A10000052B00000000000001 /* Models/AskRecord.swift in Sources */,
+				A10000062B00000000000001 /* Models/QuestionFingerprint.swift in Sources */,
+				A10000072B00000000000001 /* Services/LLMService.swift in Sources */,
+				A10000082B00000000000001 /* Services/ProfileStorageManager.swift in Sources */,
+				A10000092B00000000000001 /* Services/SpeechRecognizer.swift in Sources */,
+				A10000102B00000000000001 /* Services/LocalNotificationManager.swift in Sources */,
+				A10000112B00000000000001 /* Utilities/DesignSystem.swift in Sources */,
+				A10000122B00000000000001 /* Utilities/DateExtensions.swift in Sources */,
+				A10000132B00000000000001 /* Views/MainTabView.swift in Sources */,
+				A10000142B00000000000001 /* Views/Onboarding/OnboardingView.swift in Sources */,
+				A10000152B00000000000001 /* Views/Today/TodayView.swift in Sources */,
+				A10000162B00000000000001 /* Views/Today/SpontaneousNoteEntryView.swift in Sources */,
+				A10000172B00000000000001 /* Views/Today/RefineComparisonCard.swift in Sources */,
+				A10000182B00000000000001 /* Views/Today/CalendarSheetView.swift in Sources */,
+				A10000192B00000000000001 /* Views/Ask/AskView.swift in Sources */,
+				A10000202B00000000000001 /* Views/Ask/AskResultSheet.swift in Sources */,
+				A10000212B00000000000001 /* Views/Story/StoryView.swift in Sources */,
+				A10000222B00000000000001 /* Views/Story/StoryDetailView.swift in Sources */,
+				A10000232B00000000000001 /* Views/Settings/SettingsSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +207,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -233,6 +234,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -258,8 +260,38 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -269,8 +301,37 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

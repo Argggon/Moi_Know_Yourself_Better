@@ -45,7 +45,7 @@ public struct StoryView: View {
                     .frame(maxWidth: .infinity)
                     .background(MoiDesign.Colors.secondaryBackground)
                     .cornerRadius(MoiDesign.Metrics.cornerRadiusStandard)
-                    .padding(.horizontal)
+                    .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                 }
                 
                 // STORIES LIST OR CENTERED EMPTY STATE
@@ -53,8 +53,8 @@ public struct StoryView: View {
                     VStack(spacing: 18) {
                         Spacer(minLength: 60)
                         
-                        Image(systemName: "envelope.open")
-                            .font(.system(size: 48, weight: .thin))
+                        Image(systemName: "envelope.open.fill")
+                            .font(.system(size: 48, weight: .regular))
                             .foregroundColor(MoiDesign.Colors.tertiaryText)
                         
                         Text("No Stories Yet")
@@ -67,7 +67,7 @@ public struct StoryView: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
                             .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
-                            .padding(.horizontal, 36)
+                            .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                         
                         Button(action: { showInfoPopover = true }) {
                             HStack(spacing: 4) {
@@ -86,7 +86,7 @@ public struct StoryView: View {
                 } else {
                     VStack(alignment: .leading, spacing: 16) {
                         Text("MONTHLY LETTERS")
-                            .font(.caption)
+                            .font(.footnote)
                             .fontWeight(.bold)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
                         
@@ -132,7 +132,7 @@ public struct StoryView: View {
                         }
                         .padding(.top, 12)
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                 }
             }
             .padding(.vertical)

@@ -58,7 +58,7 @@ public struct AskResultSheet: View {
                             .font(.caption)
                             .multilineTextAlignment(.center)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
-                            .padding(.horizontal)
+                            .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                     }
                     .padding(.top, 12)
                     .frame(maxWidth: .infinity)

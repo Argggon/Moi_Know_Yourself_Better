@@ -71,7 +71,7 @@ public struct TodayView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
                                 Text("YOUR ANSWER")
-                                    .font(.caption)
+                                    .font(.footnote)
                                     .fontWeight(.bold)
                                     .foregroundColor(MoiDesign.Colors.secondaryText)
                                 Image(systemName: "checkmark.circle.fill")
@@ -144,10 +144,10 @@ public struct TodayView: View {
                         .transition(.opacity)
                     }
                 }
-                .padding(.horizontal)
-                
+                .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
+
                 Divider()
-                    .padding(.horizontal)
+                    .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                 
                 // SECTION 2: SPARKLES
                 VStack(alignment: .leading, spacing: 16) {
@@ -191,7 +191,7 @@ public struct TodayView: View {
                     // Spontaneous Note Entry Bar
                     SpontaneousNoteEntryView()
                 }
-                .padding(.horizontal)
+                .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
             }
             .padding(.vertical)
         }

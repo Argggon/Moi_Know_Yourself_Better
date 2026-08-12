@@ -81,18 +81,18 @@ public struct AskView: View {
                         .padding(.top, 4)
                     }
                 }
-                .padding(.horizontal)
-                
+                .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
+
                 Divider()
-                    .padding(.horizontal)
+                    .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                 
                 // PAST GUIDANCE HISTORY OR CENTERED EMPTY STATE
                 if records.isEmpty {
                     VStack(spacing: 18) {
                         Spacer(minLength: 40)
                         
-                        Image(systemName: "questionmark.bubble")
-                            .font(.system(size: 48, weight: .thin))
+                        Image(systemName: "questionmark.bubble.fill")
+                            .font(.system(size: 48, weight: .regular))
                             .foregroundColor(MoiDesign.Colors.tertiaryText)
                         
                         Text("No Ask Record Yet")
@@ -105,7 +105,7 @@ public struct AskView: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
                             .lineSpacing(MoiDesign.Metrics.lineSpacingBody)
-                            .padding(.horizontal, 36)
+                            .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                         
                         Button(action: { showInfoPopover = true }) {
                             HStack(spacing: 4) {
@@ -124,7 +124,7 @@ public struct AskView: View {
                 } else {
                     VStack(alignment: .leading, spacing: 14) {
                         Text("PAST GUIDANCE")
-                            .font(.caption)
+                            .font(.footnote)
                             .fontWeight(.bold)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
                         
@@ -169,7 +169,7 @@ public struct AskView: View {
                         }
                         .padding(.top, 12)
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                 }
             }
             .padding(.vertical)

@@ -61,7 +61,7 @@ public struct CalendarSheetView: View {
                                 .foregroundColor(MoiDesign.Colors.primaryText)
                         }
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                     
                     // WEEKDAY HEADERS
                     let weekdays = ["S", "M", "T", "W", "T", "F", "S"]
@@ -74,7 +74,7 @@ public struct CalendarSheetView: View {
                                 .frame(maxWidth: .infinity)
                         }
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                     
                     // 7-COLUMN GRID
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 7), spacing: 14) {
@@ -121,10 +121,10 @@ public struct CalendarSheetView: View {
                             }
                         }
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                     
                     Divider()
-                        .padding(.horizontal)
+                        .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                     
                     // INLINE MASTER-DETAIL AREA FOR SELECTED DATE
                     VStack(alignment: .leading, spacing: 20) {
@@ -195,7 +195,7 @@ public struct CalendarSheetView: View {
                             }
                         }
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, MoiDesign.Metrics.contentHorizontalPadding)
                 }
                 .padding(.vertical)
             }
