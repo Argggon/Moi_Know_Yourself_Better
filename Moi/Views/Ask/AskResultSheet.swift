@@ -69,7 +69,7 @@ public struct AskResultSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
+                    MoiSheetCloseButton()
                 }
             }
         }

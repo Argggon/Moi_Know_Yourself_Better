@@ -14,7 +14,6 @@ public struct AskView: View {
     @State private var isProcessing: Bool = false
     @State private var activeResultItem: AskResultItem? = nil
     @State private var showInfoPopover: Bool = false
-    @FocusState private var isFocused: Bool
     
     public init(onOpenSettings: @escaping () -> Void = {}) {
         self.onOpenSettings = onOpenSettings
@@ -26,9 +25,11 @@ public struct AskView: View {
                 
                 // TOP FLAT BAR INPUT FIELD
                 VStack(alignment: .leading, spacing: 12) {
-                    HStack(spacing: 10) {
-                        // Left: Mic Button
-                        Button(action: {
+                    MoiInputBar(
+                        text: $queryText,
+                        placeholder: "Ask Moi Anything...",
+                        isRecording: speechRecognizer.isRecording,
+                        onVoiceInput: {
                             if speechRecognizer.isRecording {
                                 speechRecognizer.stopTranscribing()
                                 queryText = speechRecognizer.transcript
@@ -36,28 +37,9 @@ public struct AskView: View {
                                 speechRecognizer.requestPermissions()
                                 speechRecognizer.startTranscribing()
                             }
-                        }) {
-                            Image(systemName: speechRecognizer.isRecording ? "waveform" : "mic.fill")
-                                .font(.system(size: 16, weight: .medium))
-                                .foregroundColor(speechRecognizer.isRecording ? .red : MoiDesign.Colors.primary)
-                                .frame(width: 32, height: 32)
-                                .background(speechRecognizer.isRecording ? Color.red.opacity(0.15) : MoiDesign.Colors.tertiaryBackground)
-                                .clipShape(Circle())
-                        }
-                        
-                        // Center: TextField
-                        TextField("Ask Moi Anything...", text: $queryText)
-                            .font(.body)
-                            .focused($isFocused)
-                        
-                        // Right: Submit Icon Button
-                        let isNotEmpty = !queryText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-                        
-                        Button(action: {
-                            guard isNotEmpty else { return }
+                        },
+                        onSubmit: {
                             speechRecognizer.stopTranscribing()
-                            isFocused = false
-                            
                             isProcessing = true
                             Task {
                                 let profileText = ProfileStorageManager.shared.loadUserProfile()
@@ -85,17 +67,8 @@ public struct AskView: View {
                                     self.queryText = ""
                                 }
                             }
-                        }) {
-                            Image(systemName: "arrow.up.circle.fill")
-                                .font(.system(size: 26, weight: .semibold))
-                                .foregroundColor(isNotEmpty ? MoiDesign.Colors.primary : Color.gray.opacity(0.3))
                         }
-                        .disabled(!isNotEmpty)
-                    }
-                    .padding(.horizontal, 14)
-                    .padding(.vertical, 10)
-                    .background(MoiDesign.Colors.secondaryBackground)
-                    .cornerRadius(24)
+                    )
                     
                     if isProcessing {
                         HStack(spacing: 8) {
@@ -201,8 +174,19 @@ public struct AskView: View {
             }
             .padding(.vertical)
         }
-        .navigationTitle("Ask")
+        .moiNativeNavigationBehavior()
         .toolbar {
+            if #available(iOS 26.0, *) {
+                ToolbarItem(placement: .topBarLeading) {
+                    navigationTitleLabel("Ask")
+                }
+                .sharedBackgroundVisibility(.hidden)
+            } else {
+                ToolbarItem(placement: .topBarLeading) {
+                    navigationTitleLabel("Ask")
+                }
+            }
+
             ToolbarItemGroup(placement: .topBarTrailing) {
                 // Far-Right Settings Avatar ONLY
                 UserAvatarButton(action: onOpenSettings)
@@ -214,6 +198,13 @@ public struct AskView: View {
         .sheet(isPresented: $showInfoPopover) {
             AskInfoSheet()
         }
+    }
+
+    private func navigationTitleLabel(_ title: LocalizedStringKey) -> some View {
+        Text(title)
+            .font(.title.bold())
+            .fixedSize(horizontal: true, vertical: false)
+            .accessibilityAddTraits(.isHeader)
     }
 }
 
@@ -283,7 +274,7 @@ public struct AskInfoSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
+                    MoiSheetCloseButton()
                 }
             }
         }

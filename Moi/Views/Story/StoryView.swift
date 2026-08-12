@@ -137,18 +137,26 @@ public struct StoryView: View {
             }
             .padding(.vertical)
         }
-        .navigationTitle("Story")
+        .moiNativeNavigationBehavior()
         .toolbar {
+            if #available(iOS 26.0, *) {
+                ToolbarItem(placement: .topBarLeading) {
+                    navigationTitleLabel("Story")
+                }
+                .sharedBackgroundVisibility(.hidden)
+            } else {
+                ToolbarItem(placement: .topBarLeading) {
+                    navigationTitleLabel("Story")
+                }
+            }
+
             ToolbarItemGroup(placement: .topBarTrailing) {
                 // Test phase: Sparkles button on left
                 Button(action: { triggerManualStoryGeneration() }) {
                     Image(systemName: "sparkles")
                         .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(MoiDesign.Colors.primaryText)
-                        .frame(width: 34, height: 34)
-                        .background(MoiDesign.Colors.secondaryBackground)
-                        .clipShape(Circle())
                 }
+                .accessibilityLabel("Generate story")
                 
                 // Far-Right Settings Avatar
                 UserAvatarButton(action: onOpenSettings)
@@ -163,6 +171,13 @@ public struct StoryView: View {
         .onAppear {
             loadStories()
         }
+    }
+
+    private func navigationTitleLabel(_ title: LocalizedStringKey) -> some View {
+        Text(title)
+            .font(.title.bold())
+            .fixedSize(horizontal: true, vertical: false)
+            .accessibilityAddTraits(.isHeader)
     }
     
     private func loadStories() {
@@ -258,7 +273,7 @@ public struct StoryInfoSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
+                    MoiSheetCloseButton()
                 }
             }
         }

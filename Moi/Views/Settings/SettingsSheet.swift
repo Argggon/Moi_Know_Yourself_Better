@@ -70,7 +70,7 @@ public struct SettingsSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
+                    MoiSheetCloseButton()
                 }
             }
             .confirmationDialog("Clear all data?", isPresented: $showClearConfirmation, titleVisibility: .visible) {

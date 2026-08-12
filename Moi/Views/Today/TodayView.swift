@@ -17,7 +17,6 @@ public struct TodayView: View {
     @State private var showRefineComparison: Bool = false
     @State private var showCalendarSheet: Bool = false
     @State private var showCheckmarkAnimation: Bool = false
-    @FocusState private var isAnswerInputFocused: Bool
     
     public init(onOpenSettings: @escaping () -> Void = {}) {
         self.onOpenSettings = onOpenSettings
@@ -87,10 +86,11 @@ public struct TodayView: View {
                         }
                         .padding(.top, 4)
                     } else if !showRefineComparison {
-                        // Flat Bar Input Area for Question Answer
-                        HStack(spacing: 10) {
-                            // Left: Voice Input Mic Button
-                            Button(action: {
+                        MoiInputBar(
+                            text: $answerInput,
+                            placeholder: "Write your answer...",
+                            isRecording: speechRecognizer.isRecording,
+                            onVoiceInput: {
                                 if speechRecognizer.isRecording {
                                     speechRecognizer.stopTranscribing()
                                     answerInput = speechRecognizer.transcript
@@ -98,28 +98,9 @@ public struct TodayView: View {
                                     speechRecognizer.requestPermissions()
                                     speechRecognizer.startTranscribing()
                                 }
-                            }) {
-                                Image(systemName: speechRecognizer.isRecording ? "waveform" : "mic.fill")
-                                    .font(.system(size: 16, weight: .medium))
-                                    .foregroundColor(speechRecognizer.isRecording ? .red : MoiDesign.Colors.primary)
-                                    .frame(width: 32, height: 32)
-                                    .background(speechRecognizer.isRecording ? Color.red.opacity(0.15) : MoiDesign.Colors.tertiaryBackground)
-                                    .clipShape(Circle())
-                            }
-                            
-                            // Center: TextField
-                            TextField("Write your answer...", text: $answerInput)
-                                .font(.body)
-                                .focused($isAnswerInputFocused)
-                            
-                            // Right: Submit Icon Button
-                            let isNotEmpty = !answerInput.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-                            
-                            Button(action: {
-                                guard isNotEmpty else { return }
+                            },
+                            onSubmit: {
                                 speechRecognizer.stopTranscribing()
-                                isAnswerInputFocused = false
-                                
                                 isProcessingRefine = true
                                 Task {
                                     let refined = (try? await LLMService.shared.refineAnswer(question: todayLog.questionEn, rawAnswer: answerInput)) ?? answerInput
@@ -129,17 +110,8 @@ public struct TodayView: View {
                                         self.showRefineComparison = true
                                     }
                                 }
-                            }) {
-                                Image(systemName: "arrow.up.circle.fill")
-                                    .font(.system(size: 26, weight: .semibold))
-                                    .foregroundColor(isNotEmpty ? MoiDesign.Colors.primary : Color.gray.opacity(0.3))
                             }
-                            .disabled(!isNotEmpty)
-                        }
-                        .padding(.horizontal, 14)
-                        .padding(.vertical, 10)
-                        .background(MoiDesign.Colors.secondaryBackground)
-                        .cornerRadius(24)
+                        )
                         
                         if isProcessingRefine {
                             HStack(spacing: 8) {
@@ -223,17 +195,25 @@ public struct TodayView: View {
             }
             .padding(.vertical)
         }
-        .navigationTitle("Today")
+        .moiNativeNavigationBehavior()
         .toolbar {
+            if #available(iOS 26.0, *) {
+                ToolbarItem(placement: .topBarLeading) {
+                    navigationTitleLabel("Today")
+                }
+                .sharedBackgroundVisibility(.hidden)
+            } else {
+                ToolbarItem(placement: .topBarLeading) {
+                    navigationTitleLabel("Today")
+                }
+            }
+
             ToolbarItemGroup(placement: .topBarTrailing) {
                 Button(action: { showCalendarSheet = true }) {
                     Image(systemName: "calendar")
                         .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(MoiDesign.Colors.primaryText)
-                        .frame(width: 34, height: 34)
-                        .background(MoiDesign.Colors.secondaryBackground)
-                        .clipShape(Circle())
                 }
+                .accessibilityLabel("Calendar")
                 
                 UserAvatarButton(action: onOpenSettings)
             }
@@ -258,5 +238,12 @@ public struct TodayView: View {
                 }
             }
         }
+    }
+
+    private func navigationTitleLabel(_ title: LocalizedStringKey) -> some View {
+        Text(title)
+            .font(.title.bold())
+            .fixedSize(horizontal: true, vertical: false)
+            .accessibilityAddTraits(.isHeader)
     }
 }
