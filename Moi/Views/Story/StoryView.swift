@@ -54,7 +54,7 @@ public struct StoryView: View {
                         Spacer(minLength: 60)
                         
                         Image(systemName: "envelope.open")
-                            .font(.system(size: 48, weight: .ultraLight))
+                            .font(.system(size: 48, weight: .thin))
                             .foregroundColor(MoiDesign.Colors.tertiaryText)
                         
                         Text("No Stories Yet")
@@ -86,7 +86,7 @@ public struct StoryView: View {
                 } else {
                     VStack(alignment: .leading, spacing: 16) {
                         Text("MONTHLY LETTERS")
-                            .font(.caption2)
+                            .font(.caption)
                             .fontWeight(.bold)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
                         

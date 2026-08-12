@@ -52,9 +52,8 @@ public struct RefineComparisonCard: View {
                 }
                 .padding()
                 .background(MoiDesign.Colors.cardBackground)
-                .cornerRadius(MoiDesign.Metrics.cornerRadiusStandard)
                 .tag(0)
-                
+
                 // Page 1: Refined Text Card
                 VStack(alignment: .leading, spacing: 10) {
                     TextEditor(text: $refinedText)
@@ -65,7 +64,6 @@ public struct RefineComparisonCard: View {
                 }
                 .padding()
                 .background(MoiDesign.Colors.cardBackground)
-                .cornerRadius(MoiDesign.Metrics.cornerRadiusStandard)
                 .tag(1)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))

@@ -71,7 +71,7 @@ public struct TodayView: View {
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
                                 Text("YOUR ANSWER")
-                                    .font(.caption2)
+                                    .font(.caption)
                                     .fontWeight(.bold)
                                     .foregroundColor(MoiDesign.Colors.secondaryText)
                                 Image(systemName: "checkmark.circle.fill")

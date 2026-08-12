@@ -92,7 +92,7 @@ public struct AskView: View {
                         Spacer(minLength: 40)
                         
                         Image(systemName: "questionmark.bubble")
-                            .font(.system(size: 48, weight: .ultraLight))
+                            .font(.system(size: 48, weight: .thin))
                             .foregroundColor(MoiDesign.Colors.tertiaryText)
                         
                         Text("No Ask Record Yet")
@@ -124,7 +124,7 @@ public struct AskView: View {
                 } else {
                     VStack(alignment: .leading, spacing: 14) {
                         Text("PAST GUIDANCE")
-                            .font(.caption2)
+                            .font(.caption)
                             .fontWeight(.bold)
                             .foregroundColor(MoiDesign.Colors.secondaryText)
                         
