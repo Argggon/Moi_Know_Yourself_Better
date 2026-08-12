@@ -3,10 +3,30 @@ import UIKit
 
 // MARK: - Moi Design System & Color Palette (iOS Native V2.1)
 public enum MoiDesign {
+    // MARK: - Design Metrics
     public enum Metrics {
+        // Control Sizes
         public static let inputControlSize: CGFloat = 44
         public static let inputIconSize: CGFloat = 16
         public static let microphoneIconSize: CGFloat = 17
+
+        // Corner Radius
+        public static let cornerRadiusStandard: CGFloat = 16    // Main cards
+        public static let cornerRadiusSmall: CGFloat = 8        // Small tags/labels
+        public static let cornerRadiusButton: CGFloat = 22      // Buttons (50% of height)
+        public static let cornerRadiusSheet: CGFloat = 20       // Sheet cards (larger containers)
+
+        // Spacing
+        public static let contentHorizontalPadding: CGFloat = 20   // Main content horizontal margin
+        public static let cardSpacing: CGFloat = 16                // Card list vertical spacing
+        public static let compactSpacing: CGFloat = 12             // Compact list spacing
+        public static let sectionTitleSpacing: CGFloat = 20        // Section title to content
+        public static let contentInnerPadding: CGFloat = 16        // Inner content padding
+
+        // Line Spacing
+        public static let lineSpacingBody: CGFloat = 6         // Body text
+        public static let lineSpacingCompact: CGFloat = 4      // Compact text (lists)
+        public static let lineSpacingTitle: CGFloat = 8        // Title text
     }
     
     // MARK: - Colors
